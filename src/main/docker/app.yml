@@ -1,0 +1,14 @@
+version: '2'
+services:
+    absence_management-app:
+        image: absence_management
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod,swagger
+            - SPRING_DATASOURCE_URL=jdbc:postgresql://absence_management-postgresql:5432/absence_management
+            - JHIPSTER_SLEEP=10 # gives time for the database to boot before the application
+        ports:
+            - 8080:8080
+    absence_management-postgresql:
+        extends:
+            file: postgresql.yml
+            service: absence_management-postgresql

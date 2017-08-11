@@ -1,0 +1,11 @@
+version: '2'
+services:
+    absence_management-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/absence_management/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=absence_management
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

@@ -1,0 +1,23 @@
+{
+    "absenceManagementApp": {
+        "cherry" : {
+            "home": {
+                "title": "Cherries",
+                "createLabel": "Create a new Cherry",
+                "createOrEditLabel": "Create or edit a Cherry"
+            },
+            "created": "A new Cherry is created with identifier {{ param }}",
+            "updated": "A Cherry is updated with identifier {{ param }}",
+            "deleted": "A Cherry is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Cherry {{ id }}?"
+            },
+            "detail": {
+                "title": "Cherry"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date"
+        }
+    }
+}

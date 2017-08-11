@@ -1,0 +1,23 @@
+{
+    "absenceManagementApp": {
+        "berry" : {
+            "home": {
+                "title": "Berries",
+                "createLabel": "Create a new Berry",
+                "createOrEditLabel": "Create or edit a Berry"
+            },
+            "created": "A new Berry is created with identifier {{ param }}",
+            "updated": "A Berry is updated with identifier {{ param }}",
+            "deleted": "A Berry is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Berry {{ id }}?"
+            },
+            "detail": {
+                "title": "Berry"
+            },
+            "title": "Title",
+            "content": "Content",
+            "date": "Date"
+        }
+    }
+}

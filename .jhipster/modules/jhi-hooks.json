@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Hook Test Demo generator",
+        "npmPackageName": "generator-jhipster-hook-test-demo",
+        "description": "This is a test to prove that the post-entity hook does not work",
+        "hookFor": "entity",
+        "hookType": "post",
+        "generatorCallback": "jhipster-hook-test-demo:entity"
+    }
+]

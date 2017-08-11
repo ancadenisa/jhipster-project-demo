@@ -1,0 +1,65 @@
+/**
+* <jhipster-entity-replacer>
+* replacer.insertElement("aboove classe");
+* </jhipster-entity-replacer>
+*/
+entity Blog {
+	name String required minlength(3),
+	handle String required minlength(2)
+}
+/**
+* <jhipster-entity-replacer>
+* replacer.replaceRegexWithCurlyBraceBlock("\\s*?(?:@Override)?\\s*public boolean equals\\(\\w+ \\w+\\)");
+* </jhipster-entity-replacer>
+*/
+entity Entry {
+	title String required,
+	content TextBlob required,
+	date ZonedDateTime required
+}
+
+entity Berry {
+	title String required,
+	content TextBlob required,
+	date ZonedDateTime required
+}
+
+
+entity Cherry {
+	title String required,
+	content TextBlob required,
+	date ZonedDateTime required
+}
+
+entity Category {
+	/*
+	*<jhipster-entity-replacer>
+	*replacer.replaceRegex("@Id[\\s\\S]*?;", "");	
+	* replacer.storeReplacements("defaultAbstractEntity", 
+	* function(replacer) {
+		replacer.replaceRegex("@Override\\s*public int hashCode\\([\\s\\S]*?\\)\\s*{[\\s\\S]*?}\\s*(?=[\\w\\W])", "")
+		}
+	); 	
+	* replacer.insertElement('@Named');
+	</jhipster-entity-replacer>*/
+	name String required minlength(2)
+}
+
+entity Tag {
+	/*
+	* <jhipster-entity-replacer>replacer.applyStoredReplacements("defaultAbstractEntity");	
+	  replacer.insertElement("@Named"); </jhipster-entity-replacer>
+	*/
+	name String required minlength(2)
+}
+
+relationship ManyToOne {
+	Blog{user(login)} to User,
+	Entry{blog(name)} to Blog
+}
+
+relationship ManyToMany {
+	Entry{tag(name)} to Tag{entry}
+}
+
+paginate Entry, Tag with infinite-scroll
