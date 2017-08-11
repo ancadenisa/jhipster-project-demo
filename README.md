@@ -1,5 +1,5 @@
 # absence_management
-related to https://github.com/jhipster/generator-jhipster/issues/6218 for reproducing the error.
+!!! related to https://github.com/jhipster/generator-jhipster/issues/6218 for reproducing the error
 
 This application was generated using JHipster 4.6.2, you can find documentation and help at [https://jhipster.github.io/documentation-archive/v4.6.2](https://jhipster.github.io/documentation-archive/v4.6.2).
 
